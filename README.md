@@ -4,79 +4,79 @@ This project is aimed to practice CRUD operations using Redis. It involves setti
 
 ## Setup Instructions
 
-### Build and Run the Docker Containers
+### Build and run Docker containers
 ```bash
 sudo docker compose build
 sudo docker compose up -d
 ```
 
-### Access Redis Inside the Docker Container
+### Access Redis inside the Docker
 ```bash
 sudo docker exec -it tinyurl-redis sh
 ```
 
-### Start Redis CLI
+### Start the Redis CLI
 ```bash
 redis-cli
 ```
 
-## Basic Redis Commands
+## Basic Redis commands
 
-### Connectivity Check
+### Check connection
 - **Ping Redis:**
   ```bash
   ping
   ```
 
-### Key-Value Operations
-- **Check if a Key Exists:**
+### Key-value Operations
+- **Check if a key exists:**
   ```bash
   EXISTS key
   ```
-- **Set a Key-Value Pair:**
+- **Set a key-value:**
   ```bash
   SET key value
   ```
-- **Get a Value by Key:**
+- **Get a value:**
   ```bash
   GET key
   ```
-- **Delete a Key:**
+- **Delete key:**
   ```bash
   DEL key
   ```
-- **List All Keys:**
+- **Show all keys:**
   ```bash
   KEYS *
   ```
-- **Set Expiry on a Key:**
+- **Set Expiry:**
   ```bash
   EXPIRE key seconds
   ```
-- **Check Time-to-Live (TTL):**
+- **Check time-to-live:**
   ```bash
   TTL key
   ```
 
 ### Hash Operations
-- **Set a Field in a Hash:**
+- **Set a field in a hash:**
   ```bash
   HSET key field value
   ```
-- **Get a Field Value from a Hash:**
+- **Get a field value from a hash:**
   ```bash
   HGET key field
   ```
-- **Retrieve All Fields and Values from a Hash:**
+- **Retrieve all fields and values from hash:**
   ```bash
   HGETALL key
   ```
 
 ### Flush All Data
-- **Clear All Keys in Redis:**
+- **Clear everything:**
   ```bash
   FLUSHALL
   ```
 
-## Additional Resources (Russian)
+## Additional resource (Russian)
 - [The Little Redis Book (Russian)](https://github.com/akandratovich/the-little-redis-book/blob/master/ru/redis-ru.pdf)
