@@ -1,6 +1,6 @@
 # TinyUrl with Redis
 
-This project demonstrates how to set up and interact with a TinyUrl service using Redis as the backend.
+This project is aimed to practice CRUD operations using Redis. It involves setting up and interacting with a TinyURL service, where Redis serves as the backend for storing these links.
 
 ## Setup Instructions
 
