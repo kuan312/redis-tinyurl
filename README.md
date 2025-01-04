@@ -23,57 +23,56 @@ redis-cli
 ## Basic Redis commands
 
 ### Check connection
-- **Ping Redis:**
   ```bash
   ping
   ```
 
 ### Key-value Operations
-- **Check if a key exists:**
+- **check if a key exists:**
   ```bash
   EXISTS key
   ```
-- **Set a key-value:**
+- **set a key-value:**
   ```bash
   SET key value
   ```
-- **Get a value:**
+- **get value by key:**
   ```bash
   GET key
   ```
-- **Delete key:**
+- **delete key:**
   ```bash
   DEL key
   ```
-- **Show all keys:**
+- **show all keys:**
   ```bash
   KEYS *
   ```
-- **Set Expiry:**
+- **set Expiry:**
   ```bash
   EXPIRE key seconds
   ```
-- **Check time-to-live:**
+- **check time-to-live:**
   ```bash
   TTL key
   ```
 
 ### Hash Operations
-- **Set a field in a hash:**
+- **set a field in a hash:**
   ```bash
   HSET key field value
   ```
-- **Get a field value from a hash:**
+- **get a field value from a hash:**
   ```bash
   HGET key field
   ```
-- **Retrieve all fields and values from hash:**
+- **retrieve all fields and values from hash:**
   ```bash
   HGETALL key
   ```
 
 ### Flush All Data
-- **Clear everything:**
+- **clear everything:**
   ```bash
   FLUSHALL
   ```
